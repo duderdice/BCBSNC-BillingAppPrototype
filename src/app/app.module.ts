@@ -3,8 +3,11 @@ import { ErrorHandler, NgModule } from '@angular/core';
 import { IonicApp, IonicErrorHandler, IonicModule } from 'ionic-angular';
 
 import { MyApp } from './app.component';
-import { HomePage } from '../pages/home/home';
-import { ListPage } from '../pages/list/list';
+import { DashboardPage } from '../pages/dashboard/dashboard';
+import { PayBillPage } from '../pages/pay-bill/pay-bill';
+import { AccountInformationPage } from '../pages/account-information/account-information';
+import { HelpPage } from '../pages/help/help';
+import { BillingHistoryPage } from '../pages/billing-history/billing-history';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -12,8 +15,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 @NgModule({
   declarations: [
     MyApp,
-    HomePage,
-    ListPage
+    DashboardPage,
+    PayBillPage,
+    AccountInformationPage,
+    HelpPage,
+    BillingHistoryPage
   ],
   imports: [
     BrowserModule,
@@ -22,8 +28,11 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   bootstrap: [IonicApp],
   entryComponents: [
     MyApp,
-    HomePage,
-    ListPage
+    DashboardPage,
+    PayBillPage,
+    AccountInformationPage,
+    HelpPage,
+    BillingHistoryPage
   ],
   providers: [
     StatusBar,

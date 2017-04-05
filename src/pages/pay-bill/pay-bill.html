@@ -1,0 +1,81 @@
+<ion-header>
+  <ion-navbar>
+    <button ion-button menuToggle>
+      <ion-icon name="menu"></ion-icon>
+    </button>
+    <ion-title>Pay Bill</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+    <ion-item class="item-icon-left assertive" id="payBill-list-item32">
+      <ion-icon name="alert"></ion-icon> Balance
+      <span class="item-note">$123.44</span>
+    </ion-item>
+    <div class="spacer" style="width: 300px; height: 43px;"></div>
+    <ion-list id="payBill-form5" class="list">
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="Bank Name"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="Account Number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="Routing Number"></ion-input>
+      </ion-item>
+    </ion-list>
+    <div id="payBill-markdown4" style="text-align:center;" class="show-list-numbers-and-dots">
+      <p style="color:#000000;font-size:20px;">
+        <strong>OR</strong>
+      </p>
+    </div>
+    <ion-list id="payBill-form4" class="list">
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="Name of Card"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="Credit Card Number"></ion-input>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <span class="input-ion-label">Expiration Date</span>
+        <ion-select>
+          <ion-option>April 2017</ion-option>
+          <ion-option>May 2017</ion-option>
+          <ion-option>June 2017</ion-option>
+          <ion-option>July 2017</ion-option>
+          <ion-option>August 2017</ion-option>
+          <ion-option>September 2017</ion-option>
+          <ion-option>October 2017</ion-option>
+          <ion-option>November 2017</ion-option>
+          <ion-option>December 2017</ion-option>
+          <ion-option>January 2018</ion-option>
+          <ion-option>February 2018</ion-option>
+          <ion-option>March 2018</ion-option>
+          <ion-option>April 2018</ion-option>
+        </ion-select>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked></ion-label>
+        <ion-input type="text" placeholder="CVV"></ion-input>
+      </ion-item>
+    </ion-list>
+    <ion-list>
+      <ion-item>
+        <ion-label stacked>Turn On Auto Pay</ion-label>
+      <ion-toggle toggle-class="toggle-positive" id="payBill-toggle1"></ion-toggle>
+      </ion-item>
+      <ion-item>
+        <ion-label stacked>Turn On Auto Pay</ion-label>
+        <ion-toggle toggle-class="toggle-positive" id="payBill-toggle6">Opt in for Paperless Billing</ion-toggle>
+      </ion-item>
+      <ion-item>
+        <button ion-button full>Pay Bill</button>
+      </ion-item>
+    </ion-list>
+</ion-content>

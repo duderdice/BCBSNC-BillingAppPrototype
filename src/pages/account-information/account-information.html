@@ -4,12 +4,63 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>accountInformation</ion-title>
+    <ion-title>Account Information</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+    <div class="balance">
+        <ion-icon
+            class="balance-header" 
+            name="alert"></ion-icon> 
+        <span class="balance-header">Outstanding Balance</span>
+        <span class="balance-due">$123.84</span>  
+    </div>
 
+    <button 
+        class="billing-history-button" 
+        [navPush]="billingHistoryPage"
+        ion-button block>
+        <div></div>
+        <span>View Billing History</span>
+        <ion-icon name="arrow-forward"></ion-icon>
+    </button>
+
+    <ion-list>
+        <ion-item>
+            <div class="user-info">
+                <ion-icon class="user-picture" name="contact"></ion-icon>
+                <div>
+                    <span>John Smith</span>
+                    <span class="acct-no">Account Number: 15664785</span>
+                </div>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="user-detail">
+                <span>John Smith</span>
+                <span class="info">Name</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="user-detail">
+                <span>123 Main Street, Durham, NC 27707</span>
+                <span class="info">Address</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="user-detail">
+                <span>(555)555-1234</span>
+                <span class="info">Phone Number</span>
+            </div>
+        </ion-item>
+        <ion-item>
+            <div class="user-detail">
+                <span>August 1, 1976</span>
+                <span class="info">Date of Birth</span>
+            </div>
+        </ion-item>
+    </ion-list>
 </ion-content>

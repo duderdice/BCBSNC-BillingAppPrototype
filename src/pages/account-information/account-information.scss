@@ -1,3 +1,61 @@
 page-account-information {
+    .balance {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        border: 1px solid #ddd;
+        padding: 1em;
 
+        .balance-header {
+            color: red;
+            font-size: 1.5em;
+        }
+
+        .balance-due {
+            color: #aaa;
+        }
+    }
+
+    .billing-history-button {
+        margin: 3em 0;
+
+        .button-inner {
+            justify-content: space-between;
+        }
+    }
+
+    .user-info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        .user-picture {
+            font-size: 2.5em;
+        }
+
+        div {
+            display: flex;
+            flex-direction: column;
+            padding: 1em;
+
+            .acct-no {
+                color: #666;
+                font-size: 0.85em;
+            }
+        }
+    }
+
+    .user-detail {
+        display: flex;
+        flex-direction: column;
+        // margin-left: 1em;
+        padding: 0.5em 0;
+
+        .info {
+            color: #aaa;
+            font-size: 0.85em;
+            margin-top: 0.5em;
+        }
+    }
 }

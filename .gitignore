@@ -9,9 +9,9 @@
 log.txt
 *.sublime-project
 *.sublime-workspace
+yarn.lock
 .vscode/
 npm-debug.log*
-
 .idea/
 .sass-cache/
 .tmp/
@@ -32,3 +32,4 @@ $RECYCLE.BIN/
 .DS_Store
 Thumbs.db
 UserInterfaceState.xcuserstate
+

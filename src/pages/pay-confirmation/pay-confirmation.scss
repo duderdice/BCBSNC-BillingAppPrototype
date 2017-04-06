@@ -1,0 +1,16 @@
+page-pay-confirmation {
+  .confirmation-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+  }
+  .success-icon {
+    font-size: 10em;
+    color: lightgreen;
+  }
+  .success-label {
+    letter-spacing: 5px;
+    color: lightgreen;
+  }
+}

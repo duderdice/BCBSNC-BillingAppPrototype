@@ -1,3 +1,27 @@
 page-dashboard {
+  .dashboard-menu {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
 
+    .dashboard-menu-btn {
+      height: 200px;
+      width: 150px;
+      background-color: #f2f2f2;
+      color: #0099cc;
+      margin: 5px;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 10px;
+
+      h6 {
+        text-align: center;
+      }
+    }
+    ion-icon {
+      font-size: 100px;
+    }
+  }
 }

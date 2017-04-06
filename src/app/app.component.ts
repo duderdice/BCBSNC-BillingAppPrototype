@@ -23,8 +23,8 @@ export class MyApp {
 
     // used for an example of ngFor and navigation
     this.pages = [
-      { title: 'Pay Bill', component: PayBillPage },
       { title: 'Dashboard', component: DashboardPage },
+      { title: 'Pay Bill', component: PayBillPage },
       { title: 'Account Information', component: AccountInformationPage },
       { title: 'Help', component: HelpPage },
     ];

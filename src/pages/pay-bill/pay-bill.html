@@ -8,11 +8,13 @@
 </ion-header>
 
 <ion-content padding>
-    <ion-item class="item-icon-left assertive" id="payBill-list-item32">
-      <ion-icon name="alert"></ion-icon> Balance
-      <span class="item-note">$123.44</span>
-    </ion-item>
-    <div class="spacer" style="width: 300px; height: 43px;"></div>
+    <div class="balance">
+      <ion-icon
+          class="balance-header"
+          name="alert"></ion-icon>
+      <span class="balance-header">Outstanding Balance</span>
+      <span class="balance-due">$123.84</span>
+    </div>
     <ion-list id="payBill-form5" class="list">
       <ion-item>
         <ion-label stacked></ion-label>
@@ -42,8 +44,7 @@
         <ion-input type="text" placeholder="Credit Card Number"></ion-input>
       </ion-item>
       <ion-item>
-        <ion-label stacked></ion-label>
-        <span class="input-ion-label">Expiration Date</span>
+        <ion-label><span class="input-ion-label">Expiration Date</span></ion-label>
         <ion-select>
           <ion-option>April 2017</ion-option>
           <ion-option>May 2017</ion-option>
@@ -68,14 +69,12 @@
     <ion-list>
       <ion-item>
         <ion-label stacked>Turn On Auto Pay</ion-label>
-      <ion-toggle toggle-class="toggle-positive" id="payBill-toggle1"></ion-toggle>
+        <ion-toggle toggle-class="toggle-positive" id="payBill-toggle1"></ion-toggle>
       </ion-item>
       <ion-item>
-        <ion-label stacked>Turn On Auto Pay</ion-label>
-        <ion-toggle toggle-class="toggle-positive" id="payBill-toggle6">Opt in for Paperless Billing</ion-toggle>
+        <ion-label stacked>Opt In For Paperless Billing</ion-label>
+        <ion-toggle toggle-class="toggle-positive" id="payBill-toggle6"></ion-toggle>
       </ion-item>
-      <ion-item>
-        <button ion-button full>Pay Bill</button>
-      </ion-item>
+      <button class="pay-button" ion-button full (click)="presentLoading()">Pay Bill</button>
     </ion-list>
 </ion-content>

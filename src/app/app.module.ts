@@ -8,6 +8,7 @@ import { PayBillPage } from '../pages/pay-bill/pay-bill';
 import { AccountInformationPage } from '../pages/account-information/account-information';
 import { HelpPage } from '../pages/help/help';
 import { BillingHistoryPage } from '../pages/billing-history/billing-history';
+import { PayConfirmationPage } from '../pages/pay-confirmation/pay-confirmation';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -19,7 +20,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PayBillPage,
     AccountInformationPage,
     HelpPage,
-    BillingHistoryPage
+    BillingHistoryPage,
+    PayConfirmationPage
   ],
   imports: [
     BrowserModule,
@@ -32,7 +34,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     PayBillPage,
     AccountInformationPage,
     HelpPage,
-    BillingHistoryPage
+    BillingHistoryPage,
+    PayConfirmationPage
   ],
   providers: [
     StatusBar,

@@ -1,6 +1,6 @@
 <ion-header>
 
-  <ion-navbar>
+  <ion-navbar color="light">
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
@@ -13,14 +13,14 @@
 <ion-content padding>
     <div class="balance">
         <ion-icon
-            class="balance-header" 
-            name="alert"></ion-icon> 
+            class="balance-header"
+            name="alert"></ion-icon>
         <span class="balance-header">Outstanding Balance</span>
-        <span class="balance-due">$123.84</span>  
+        <span class="balance-due">$123.84</span>
     </div>
 
-    <button 
-        class="billing-history-button" 
+    <button
+        class="billing-history-button"
         [navPush]="billingHistoryPage"
         ion-button block>
         <div></div>

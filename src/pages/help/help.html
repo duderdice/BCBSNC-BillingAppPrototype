@@ -4,12 +4,21 @@
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
     </button>
-    <ion-title>help</ion-title>
+    <ion-title>Help</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
-
+    <ion-list>
+        <ion-list-header>Frequently Asked Questions</ion-list-header>
+        <ion-item *ngFor="let q of faqs" class="question">
+<!--             <ion-avatar item-left>
+                <ion-icon name="contact"></ion-icon>
+            </ion-avatar> -->
+            <h2>{{q.question}}</h2>
+            <p>{{q.answer}}</p>
+        </ion-item>
+    </ion-list>
 </ion-content>

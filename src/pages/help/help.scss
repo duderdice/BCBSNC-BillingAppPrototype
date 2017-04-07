@@ -1,3 +1,15 @@
 page-help {
+    .question {
+        padding: 0.5em 0;
 
+        h2 {
+            // display: inline;
+            white-space: normal;
+            padding-bottom: 0.5em;
+        }
+
+        p {
+            white-space: normal;
+        }
+    }
 }

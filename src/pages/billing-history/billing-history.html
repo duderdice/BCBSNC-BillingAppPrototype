@@ -13,9 +13,12 @@
 <ion-content padding>
     <ion-list>
         <ion-item *ngFor="let bill of billingHistory">
-            <div class="bill-item">
+            <div
+              [navPush]="billingHistoryInfoPage" 
+              class="bill-item">
                 <span>{{bill.date}}</span>
                 <span class="balance">{{bill.balance}}</span>
+                <ion-icon name="arrow-forward"></ion-icon>
             </div>
         </ion-item>
     </ion-list>

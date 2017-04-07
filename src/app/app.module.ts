@@ -9,6 +9,7 @@ import { AccountInformationPage } from '../pages/account-information/account-inf
 import { HelpPage } from '../pages/help/help';
 import { BillingHistoryPage } from '../pages/billing-history/billing-history';
 import { PayConfirmationPage } from '../pages/pay-confirmation/pay-confirmation';
+import { BillingHistoryInfoPage } from '../pages/billing-history-info/billing-history-info';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
@@ -21,7 +22,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AccountInformationPage,
     HelpPage,
     BillingHistoryPage,
-    PayConfirmationPage
+    PayConfirmationPage,
+    BillingHistoryInfoPage
   ],
   imports: [
     BrowserModule,
@@ -35,7 +37,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
     AccountInformationPage,
     HelpPage,
     BillingHistoryPage,
-    PayConfirmationPage
+    PayConfirmationPage,
+    BillingHistoryInfoPage
   ],
   providers: [
     StatusBar,

@@ -10,10 +10,18 @@ Ensure the following frameworks are installed...
 
 ```npm install -g yarn ionic cordova```
 
+Run ionic command to build the Android version of the application
+
+```ionic build android```
+
 Install the Android target platform for the Cordova framework
 
 ```cordova platform add android```
 
-Run ionic command to build the Android version of the application
+Run command to ???
 
-```ionic build android```
+```ionic cordova run android```
+
+ionic server => to run in web broswer (for easier dev/debugging cycle)
+
+ionic cordova emulate android => to run in android emulator (should already have emulated device started?)

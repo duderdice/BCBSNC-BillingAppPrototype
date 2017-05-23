@@ -6,14 +6,21 @@ prototype ionic app for showing billing capabilities for a prospective client
 
 Ensure Android SDK is installed and is available in your PATH.
 
-Ensure the following frameworks are installed...
+0. Ensure the following frameworks are installed...
 
-```npm install -g yarn ionic cordova```
+    ```npm install -g yarn ionic cordova```
 
-Install the Android target platform for the Cordova framework
+1. In the project root folder, install packages by running yarn
 
-```cordova platform add android```
+    ```yarn```
 
-Run ionic command to build the Android version of the application
+2. Build the Android version of the application using the following command (should offer to execute "cordova add android" for you, if platform not present)
 
-```ionic build android```
+    ```ionic cordova build android```
+
+3. Run applicaiton using ONE of the following two commands:
+
+    ```ionic cordova run android``` android emulated device should already be running
+    
+    ```ionic serve``` to view/debug in web browser (for easier dev/debugging cycle)
+

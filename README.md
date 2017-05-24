@@ -18,7 +18,7 @@ Ensure Android SDK is installed and is available in your PATH.
 
     ```ionic cordova build android```
 
-3. Run applicaiton using ONE of the following two commands:
+3. Run application using ONE of the following two commands:
 
     ```ionic cordova run android``` android emulated device should already be running
     
